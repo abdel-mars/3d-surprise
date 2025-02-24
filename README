@@ -1,0 +1,22 @@
+# 3D Surprise ❤️
+
+An interactive 3D Valentine's experience featuring a parachute model with romantic message functionality.
+
+![Preview](Screenshot.png)
+
+## Features ✨
+- 🪂 Interactive 3D parachute model from Sketchfab
+- 🎮 Orbit controls (rotate/zoom/pan)
+- 🌈 Animated gradient background with "lightning" effect
+- 💌 Toggleable love message with animations
+- 📱 Responsive design for all devices
+- ⏳ Loading screen with progress tracking
+- 💖 Romantic styling with custom fonts and effects
+
+## Live Demo 🚀
+[View Live Demo](https://abdel-mars.io/3d-surprise/) 
+
+## Installation 💻
+1. Clone the repository:
+```bash
+git clone https://github.com/abdel-mars/3d-surprise.git

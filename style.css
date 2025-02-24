@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(
+        -10deg,
+        #ffffff,
+        #dbd2ff,
+        #1d134d,
+        #484b72
+    );
+    background-size: 400% 400%;
+    animation: subtle-light 12s ease infinite;
+    min-height: 100vh;
+}
+
+canvas {
+    display: block;
+}
+
+.loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #4d77ff;
+    z-index: 100;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.message-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2e55d6;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.2em;
+    box-shadow: 0 4px 15px rgba(77, 119, 255, 0.3);
+    transition: all 0.3s ease;
+    z-index: 101;
+}
+
+.message-button:hover {
+    background: #3a5dcc;
+    transform: translateX(-50%) scale(1.05);
+}
+
+.love-note {
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(200, 200, 255, 0.2);
+    z-index: 100;
+    max-width: 500px;
+    width: 90%;
+    display: none;
+    animation: float 3s ease-in-out infinite;
+    backdrop-filter: blur(3px);
+}
+
+.love-note.show {
+    display: block;
+}
+
+.love-note h1 {
+    color: #4d77ff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.love-note p {
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.hearts {
+    text-align: center;
+    font-size: 24px;
+    color: #4d77ff;
+    animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateX(-50%) translateY(0) rotate(-1deg); }
+    50% { transform: translateX(-50%) translateY(-8px) rotate(1deg); }
+    100% { transform: translateX(-50%) translateY(0) rotate(-1deg); }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.8; transform: scale(0.98); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 0.8; transform: scale(0.98); }
+}
+
+@keyframes subtle-light {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
